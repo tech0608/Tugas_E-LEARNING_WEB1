@@ -6,17 +6,17 @@ Sebuah website personal sederhana yang dibuat menggunakan HTML, CSS, dan JavaScr
 
 ### Mode Terang (Light Mode)
 
-![Light Mode](<img width="1919" height="1139" alt="Screenshot 2025-10-28 200735" src="https://github.com/user-attachments/assets/92e15834-963e-4b22-b88d-88d368bd78ea" />
+![Light Mode](<img width="1919" height="1139" alt="Image" src="https://github.com/user-attachments/assets/03e2d00d-b744-4a64-bb21-3faa6627fac8" />
 )
 
 ### Mode Gelap (Dark Mode)
 
-![Dark Mode](<img width="1917" height="1137" alt="Screenshot 2025-10-28 200659" src="https://github.com/user-attachments/assets/72699e36-c1cc-47e6-8237-82c55c0d0e03" />
+![Dark Mode](<img width="1917" height="1137" alt="Image" src="https://github.com/user-attachments/assets/46649448-6532-4a9c-96b3-b97d24515004" />
 )
 
 ### Tampilan Biodata
 
-![Biodata](<img width="1919" height="1134" alt="Screenshot 2025-10-28 201027" src="https://github.com/user-attachments/assets/564daa63-0891-4b58-86ad-af5d4e32b8f7" />
+![Biodata](<img width="1919" height="1134" alt="Image" src="https://github.com/user-attachments/assets/41b19bae-72a8-4379-811c-2da86bb7a650" />
 )
 
 ## Fitur
