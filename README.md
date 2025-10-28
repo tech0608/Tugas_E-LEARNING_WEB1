@@ -6,18 +6,15 @@ Sebuah website personal sederhana yang dibuat menggunakan HTML, CSS, dan JavaScr
 
 ### Mode Terang (Light Mode)
 
-![Light Mode](<img width="1919" height="1139" alt="Image" src="https://github.com/user-attachments/assets/03e2d00d-b744-4a64-bb21-3faa6627fac8" />
-)
+![Light Mode](https://github.com/tech0608/Pemrograman_Web_1/blob/master/image/tema%20terang.png)
 
 ### Mode Gelap (Dark Mode)
 
-![Dark Mode](<img width="1917" height="1137" alt="Image" src="https://github.com/user-attachments/assets/46649448-6532-4a9c-96b3-b97d24515004" />
-)
+![Dark Mode](https://github.com/tech0608/Pemrograman_Web_1/blob/master/image/tema%20gelap.png)
 
 ### Tampilan Biodata
 
-![Biodata](<img width="1919" height="1134" alt="Image" src="https://github.com/user-attachments/assets/41b19bae-72a8-4379-811c-2da86bb7a650" />
-)
+![Biodata](https://github.com/tech0608/Pemrograman_Web_1/blob/master/image/bio%20data.png)
 
 ## Fitur
 
