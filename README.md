@@ -26,7 +26,7 @@ Sebuah website personal sederhana yang dibuat menggunakan HTML, CSS, dan JavaScr
 - HTML5
 - CSS3 (dengan variabel CSS untuk tema)
 - JavaScript (Vanilla JS)
-- Google Fonts (Poppins)
+- Font Awesome (untuk ikon)
 
 ## Struktur Proyek
 
@@ -40,13 +40,12 @@ TUGASWEB1/
 
 ### CSS
 
-- Menggunakan variabel CSS untuk manajemen warna dan tema
-- Gradient background yang menarik
-- Efek glassmorphism pada container
-- Transisi dan animasi yang halus
-- Styling yang responsif
+- Menggunakan variabel CSS untuk manajemen tema (mode terang dan gelap)
+- Desain kartu (card) yang modern dengan bayangan (shadow) dan layout terpusat
+- Transisi yang halus untuk perubahan warna dan tombol
+- Styling tombol yang interaktif
 
 ### JavaScript
 
-- Fungsi `tampilkanBiodata()` untuk menampilkan informasi pribadi
-- Fungsi `toggleMode()` untuk beralih antara mode terang dan gelap
+- Fungsi `toggleBiodata()` untuk menampilkan dan menyembunyikan informasi pribadi.
+- Fungsi `toggleTheme()` untuk beralih antara mode terang dan gelap dengan mengubah kelas pada `body`.
