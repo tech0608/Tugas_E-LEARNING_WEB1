@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luthfy Arief</title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        :root {
+            /* Variabel untuk Dark Mode (default) */
+            --bg-color: #1a1a2e;
+            --card-bg: #16213e;
+            --text-color: #e0e0e0;
+            --heading-color: #e94560;
+            --button-bg: #0f3460;
+            --button-hover-bg: #e94560;
+            --button-text: #ffffff;
+            --border-color: #0f3460;
+            --gradient-start: #1a1a2e;
+            --gradient-end: #0f3460;
+        }
+
+        body.light-mode {
+            /* Variabel untuk Light Mode */
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --heading-color: #0d6efd;
+            --button-bg: #0d6efd;
+            --button-hover-bg: #0b5ed7;
+            --button-text: #ffffff;
+            --border-color: #e0e0e0;
+            --gradient-start: #e0e7ff;
+            --gradient-end: #f0f2f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transition: all 0.4s ease;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 
+                       0 1px 3px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
+                       0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.8em;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            transition: color 0.4s ease;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--heading-color);
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        h1:hover::after {
+            width: 100px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .button-group {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap; /* Untuk responsif pada layar kecil */
+        }
+
+        .btn {
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            padding: 14px 28px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: var(--button-hover-bg);
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover::before {
+            width: 100%;
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn i {
+            font-size: 1.2em;
+        }
+
+        /* Styling untuk konten biodata yang disembunyikan */
+        #biodata-content {
+            display: none; /* Sembunyikan secara default */
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-color);
+            text-align: left;
+            transition: border-color 0.4s ease;
+        }
+
+        #biodata-content h2 {
+            color: var(--heading-color);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        #biodata-content ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        #biodata-content ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: var(--text-color);
+        }
+        
+        #biodata-content ul li strong {
+            color: var(--heading-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Luthfy Arief</h1>
+
+        <p>Halo! Saya <strong>Luthfy Arief</strong>, seorang mahasiswa <strong>Teknik Informatika</strong> di <strong>Universitas Teknologi Bandung</strong>. Saya memiliki ketertarikan mendalam pada dunia pengembangan perangkat lunak, baik itu web development maupun mobile, serta sangat antusias dengan hardware dan teknologi PC.</p>
+        
+        <p>Selain fokus pada studi akademis, saya juga senang mengasah keterampilan praktis dan kepemimpinan melalui berbagai kegiatan dan organisasi kemahasiswaan. Pengalaman ini mengajarkan saya banyak hal tentang kerja sama tim, manajemen proyek, dan komunikasi yang efektif, yang saya yakini sangat relevan untuk karir di industri teknologi.</p>
+
+        <p>Website sederhana ini adalah salah satu proyek latihan saya untuk mengimplementasikan HTML, CSS, dan JavaScript dalam satu halaman. Halaman ini juga dilengkapi dengan fitur mode terang dan gelap untuk menguji kemampuan styling dinamis. Ini adalah bagian dari perjalanan saya untuk terus belajar dan mengasah keterampilan front-end.</p>
+
+        <div class="button-group">
+            <button class="btn" onclick="toggleBiodata()">
+                <i class="fas fa-user-circle"></i> Tampilkan Biodata
+            </button>
+            <button class="btn" onclick="toggleTheme()">
+                <i class="fas fa-adjust"></i> Ganti Mode Light/Dark
+            </button>
+        </div>
+
+        <div id="biodata-content">
+            <h2>Biodata Singkat</h2>
+            <ul>
+                <li><strong>Nama Lengkap:</strong> Luthfy Arief</li>
+                <li><strong>Prodi:</strong> Teknik Informatika</li>
+                <li><strong>Universitas:</strong> Universitas Teknologi Bandung</li>
+                
+                <li><strong>Aktivitas:</strong> Aktif di Organisasi Kemahasiswaan</li>
+                
+                <li><strong>Hobi:</strong> PC Gaming (Balap Mobil, Game Santai), Web & Mobile Development</li>
+                <li><strong>Motto:</strong> "Teknologi adalah alat, inovasi adalah cara berpikir."</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk mengganti tema (light/dark mode)
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan biodata
+        function toggleBiodata() {
+            let biodata = document.getElementById('biodata-content');
+            let button = document.querySelector('.btn[onclick="toggleBiodata()"]');
+
+            if (biodata.style.display === 'none' || biodata.style.display === '') {
+                biodata.style.display = 'block';
+                button.innerHTML = '<i class="fas fa-user-circle"></i> Sembunyikan Biodata';
+            } else {
+                biodata.style.display = 'none';
+                button.innerHTML = '<i class="fas fa-user-circle"></i> Tampilkan Biodata';
+            }
+        }
+
+        // Default: Sembunyikan biodata saat halaman pertama kali dimuat
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('biodata-content').style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
